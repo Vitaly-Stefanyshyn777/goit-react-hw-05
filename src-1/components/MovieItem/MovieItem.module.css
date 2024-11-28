@@ -1,0 +1,37 @@
+.movieCard {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.movieCard:hover {
+  transform: translateY(-10px);
+}
+
+.posterImage {
+  width: 100%;
+  height: auto;
+}
+
+.movieInfo {
+  padding: 15px;
+}
+
+.movieTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movieReleaseDate,
+.movieRating {
+  font-size: 14px;
+  color: #777;
+}
+
+.ratingValue {
+  color: #ff6b6b;
+  font-weight: bold;
+}

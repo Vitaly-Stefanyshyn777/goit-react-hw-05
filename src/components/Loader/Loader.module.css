@@ -1,0 +1,80 @@
+/* .containerLoader {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .containerLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+} */
+/* 
+.containerLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #121212;
+}
+
+.loaderSpinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #444;
+  border-top: 8px solid #1db954;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+} */
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* .containerLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loaderSpinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #444;
+  border-top: 8px solid #1db954;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .containerLoader {
+  display: flex;
+  justify-content: center;
+} */
+
+.castList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.castItem {
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .castItem {
+    width: 200px;
+  }
+}

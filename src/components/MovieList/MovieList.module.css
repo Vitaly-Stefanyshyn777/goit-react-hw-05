@@ -1,0 +1,135 @@
+/* .containerList {
+  padding: 0 16px;
+}
+
+.filmsList {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filmItem {
+  transition: transform 0.3s;
+}
+
+.filmItem:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1440px) {
+  .filmsList {
+    gap: 40px;
+  }
+} */
+
+/* .containerList {
+  padding: 0 16px;
+}
+
+.filmsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .filmsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .filmsList {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+
+.filmItem {
+  transition: transform 0.3s;
+}
+
+.filmItem:hover {
+  transform: scale(1.05);
+} */
+/* 
+.filmsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .filmsList {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .filmsList {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+} */
+
+
+/* ---------------------------------------------------------------- */
+
+/* 
+.filmsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .filmsList {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .filmsList {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+.filmItem {
+  transition: transform 0.3s;
+}
+
+.filmItem:hover {
+  transform: scale(1.05);
+} */
+
+.containerList {
+  padding: 0 16px;
+}
+
+.filmsList {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filmItem {
+  transition: transform 0.3s;
+}
+
+.filmItem:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1440px) {
+  .filmsList {
+    gap: 40px;
+  }
+}

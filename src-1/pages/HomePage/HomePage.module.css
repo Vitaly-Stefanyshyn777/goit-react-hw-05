@@ -1,0 +1,10 @@
+.homeContainer {
+  padding: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2d3436;
+}

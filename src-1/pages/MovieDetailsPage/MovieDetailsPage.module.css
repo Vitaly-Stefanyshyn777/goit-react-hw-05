@@ -1,0 +1,102 @@
+.detailsSection {
+  padding: 40px 20px;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #2d3436;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.backButton:hover {
+  color: #ff6b6b;
+}
+
+.detailsContainer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.poster {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.releaseDate,
+.userScore {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.overviewTitle,
+.genresTitle {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.overview {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.genresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.genreItem {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.additionalInfo {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.infoLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2d3436;
+}
+
+.infoLink:hover {
+  color: #ff6b6b;
+}
+
+.activeInfoLink {
+  color: #ff6b6b;
+  border-bottom: 2px solid #ff6b6b;
+}

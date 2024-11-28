@@ -1,0 +1,15 @@
+.movieListContainer {
+  padding: 40px 20px;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.movieGridItem {
+  text-decoration: none;
+}
