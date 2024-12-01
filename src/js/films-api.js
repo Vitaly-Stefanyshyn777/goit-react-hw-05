@@ -81,6 +81,8 @@ export const getFilmsDetails = async (id, codeWord = "") => {
   }
 };
 
+
+
 export const getFilmsSearch = async (query, page = 1) => {
   try {
     const response = await apiClient.get("/search/movie", {

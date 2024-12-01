@@ -233,13 +233,79 @@
 // // -----------------------------наче працює-----------------------------------
 
 
+// import { useSearchParams } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import toast, { Toaster } from "react-hot-toast";
+// import MovieList from "../../components/MovieList/MovieList";
+// import SearchBox from "../../components/SearchBox/SearchBox";
+// import { getFilmsSearch } from "../../js/films-api";
+// // import Loader from "../../components/Loader/Loader";
+// import styles from "./MoviesPage.module.css";
+
+// const MoviesPage = () => {
+//   const [searchResults, setSearchResults] = useState([]);
+//   const [searchParams, setSearchParams] = useSearchParams();
+//   const searchQuery = searchParams.get("search");
+//   const [loading, setLoading] = useState(false);
+
+//   useEffect(() => {
+//     if (!searchQuery) return;
+
+//     const searchData = async () => {
+//       setLoading(true);
+//       try {
+//         const response = await getFilmsSearch(searchQuery);
+//         setSearchResults(response.results);
+//         if (!response.total_results) {
+//           toast.error(
+//             "Sorry, we have not found the films for your request. Try to write it differently."
+//           );
+//         } else {
+//           toast.success(`Wow! We found ${response.total_results} films`);
+//         }
+//       } catch (error) {
+//         console.error(error);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     searchData();
+//   }, [searchQuery]);
+
+//   const handleSearchSubmit = (query) => {
+//     setSearchParams({ search: query });
+//   };
+
+//   return (
+//     <main>
+//       <section className={styles.moviesSearch}>
+//         <SearchBox onSubmit={handleSearchSubmit} />
+//         <Toaster position="top-right" reverseOrder={false} />
+
+//         {loading ? (
+//           <div className={styles.loadingContainer}>
+//             {/* Простий текст завантаження */}
+//             <p>Loading...</p>
+//           </div>
+//         ) : searchResults.length > 0 ? (
+//           <MovieList filmsList={searchResults} />
+//         ) : (
+//           <p>No results found.</p>
+//         )}
+//       </section>
+//     </main>
+//   );
+// };
+
+// export default MoviesPage;
+
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import MovieList from "../../components/MovieList/MovieList";
 import SearchBox from "../../components/SearchBox/SearchBox";
-import { getFilmsSearch } from "../../js/films-api";
-// import Loader from "../../components/Loader/Loader";
+import { getFilmsSearch } from "../../js/films-api"; // Актуальний API для пошуку фільмів
 import styles from "./MoviesPage.module.css";
 
 const MoviesPage = () => {
@@ -249,32 +315,31 @@ const MoviesPage = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (!searchQuery) return;
-
-    const searchData = async () => {
+    const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await getFilmsSearch(searchQuery);
+        const query = searchQuery || "popular"; // Якщо немає запиту, шукаємо популярні фільми
+        const response = await getFilmsSearch(query);
+        
         setSearchResults(response.results);
-        if (!response.total_results) {
-          toast.error(
-            "Sorry, we have not found the films for your request. Try to write it differently."
-          );
+        if (response.total_results === 0) {
+          toast.error("No results found.");
         } else {
-          toast.success(`Wow! We found ${response.total_results} films`);
+          toast.success(`Found ${response.total_results} films.`);
         }
       } catch (error) {
-        console.error(error);
+        console.error("Error fetching films:", error);
+        toast.error("Something went wrong, please try again.");
       } finally {
         setLoading(false);
       }
     };
 
-    searchData();
-  }, [searchQuery]);
+    fetchData();
+  }, [searchQuery]); // Виконується щоразу, коли змінюється searchQuery
 
   const handleSearchSubmit = (query) => {
-    setSearchParams({ search: query });
+    setSearchParams({ search: query }); // Оновлює параметри URL при пошуку
   };
 
   return (
@@ -285,7 +350,6 @@ const MoviesPage = () => {
 
         {loading ? (
           <div className={styles.loadingContainer}>
-            {/* Простий текст завантаження */}
             <p>Loading...</p>
           </div>
         ) : searchResults.length > 0 ? (
