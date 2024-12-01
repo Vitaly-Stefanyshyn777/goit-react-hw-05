@@ -15,6 +15,10 @@
 
 // export default App;
 
+// ------------------------працює-без стилів----------------------------------------
+
+// import styles from "./App.module.css";
+
 import Navigation from "../Navigation/Navigation";
 import RouteSection from "../RouteSection/RouteSection";
 
@@ -26,3 +30,6 @@ const App = () => (
 );
 
 export default App;
+
+
+// ------------------------працює-без стилів----------------------------------------
