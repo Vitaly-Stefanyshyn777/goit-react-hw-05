@@ -1,11 +1,9 @@
-
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/goit-react-hw-05/',
   plugins: [
     react(),
     visualizer({
@@ -27,10 +25,9 @@ export default defineConfig({
       },
       plugins: [visualizer()],
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 1000, // Підвищуємо обмеження для попередження про великі частини до 1MB
   },
 });
-
 
 // import { defineConfig } from "vite";
 // import react from "@vitejs/plugin-react";
