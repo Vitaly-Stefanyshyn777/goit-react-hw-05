@@ -1,207 +1,7 @@
-/* .reviewNotFound {
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: -0.02em;
-  line-height: 0.89em;
-}
-
-.reviewItem {
-  margin-bottom: 20px;
-} */
-/* 
-.reviewNotFound {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.reviewItem {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #444;
-  padding-bottom: 20px;
-} */
-
-/* 
-.reviewContainer {
-  padding: 20px;
-  background-color: #121212;
-  color: #fff;
-}
-
-.reviewNotFound {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.reviewItem {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 20px;
-}
-
-.reviewAuthor {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.reviewContent {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-@media screen and (min-width: 768px) {
-  .reviewAuthor {
-    font-size: 20px;
-  }
-
-  .reviewContent {
-    font-size: 17px;
-  }
-} */
-/* 
-.reviewContainer {
-  padding: 20px;
-}
-
-.reviewNotFound {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.reviewItem {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 20px;
-}
-
-.reviewAuthor {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.reviewContent {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-@media screen and (min-width: 768px) {
-  .reviewAuthor {
-    font-size: 20px;
-  }
-
-  .reviewContent {
-    font-size: 17px;
-  }
-} */
-
-/* ---------------------------------------------------------------- */
-/* 
-.reviewContainer {
-  padding: 20px;
-}
-
-.reviewNotFound {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.reviewItem {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 20px;
-}
-
-.reviewAuthor {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.reviewContent {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-@media screen and (min-width: 768px) {
-  .reviewAuthor {
-    font-size: 20px;
-  }
-
-  .reviewContent {
-    font-size: 17px;
-  }
-} */
-
-/* 
-.reviewNotFound {
-  .reviews-container {
-    background-color: #f9f9f9;
-    padding: 25px;
-    border-radius: 8px;
-  }
-}
-
-.reviewItem {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-
-.reviewItem h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-}
-.reviewItem p {
-  color: #666;
-}
- */
-
-
-
-/* 
-
-.reviews-container {
-  background-color: #f9f9f9;
-  padding: 25px;
-  border-radius: 8px;
-}
-
-.review-card {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.review-card h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.review-card p {
-  color: #666;
-} */
-
 .reviewList {
-  list-style: none; /* Видаляє крапки */
-  padding: 0; /* Прибирає внутрішні відступи */
-  margin: 0; /* Прибирає зовнішні відступи */
+  list-style: none; 
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -222,7 +22,7 @@
   margin-bottom: 25px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 12px; /* Закруглені кути */
+  border-radius: 12px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -234,7 +34,7 @@
 
 .author > * {
   margin-bottom: 8px;
-  border-radius: 4px; /* Легке закруглення для скелетонів */
+  border-radius: 4px;
 }
 
 .commentForm {
@@ -251,7 +51,7 @@
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 8px; /* Закруглення для текстового поля */
+  border-radius: 8px; 
   outline: none;
   resize: none;
 }
@@ -267,7 +67,7 @@
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 12px; /* Закруглені кути */
+  border-radius: 12px; 
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -275,13 +75,13 @@
 }
 
 .addCommentButton:hover {
-  background-color: #0056b3; /* Трохи темніший відтінок */
-  transform: scale(1.05); /* Збільшення кнопки при наведенні */
+  background-color: #0056b3; 
+  transform: scale(1.05); 
 }
 
 .addCommentButton:active {
-  background-color: #003f7f; /* Темніший відтінок при натисканні */
-  transform: scale(1); /* Повернення до початкового розміру */
+  background-color: #003f7f;
+  transform: scale(1); 
 }
 
 
@@ -289,7 +89,7 @@
   margin-bottom: 25px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 12px; /* Закруглені кути для скелетона */
+  border-radius: 12px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -298,7 +98,7 @@
 }
 
 .skeletonContent > * {
-  border-radius: 4px; /* Легке закруглення для ліній скелетона */
+  border-radius: 4px;
 }
 
 

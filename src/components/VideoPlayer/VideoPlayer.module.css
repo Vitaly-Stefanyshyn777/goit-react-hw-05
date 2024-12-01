@@ -15,32 +15,32 @@
   
   @media screen and (min-width: 1200px) {
     .video {
-      max-width: 800px; /* Для великих екранів */
+      max-width: 800px; 
     }
   }
 
 
 
   .video {
-    width: 100%; /* Плеєр займатиме всю доступну ширину */
-    max-width: 340px; /* Максимальна ширина для малих екранів */
-    aspect-ratio: 16 / 9; /* Зберігаємо співвідношення сторін */
+    width: 100%; 
+    max-width: 340px; 
+    aspect-ratio: 16 / 9; 
     background-image: url('//pleer.videoplayers.club/web/img/loader.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ccc;
-    border: 1px solid #ddd; /* Легка рамка для виділення */
-    border-radius: 8px; /* Закруглені кути */
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
   }
   
   @media screen and (min-width: 767px) {
     .video {
-      max-width: 610px; /* Збільшуємо максимальну ширину для середніх екранів */
+      max-width: 610px;
     }
   }
   
   @media screen and (min-width: 1200px) {
     .video {
-      max-width: 800px; /* Для великих екранів */
+      max-width: 800px; 
     }
   }
