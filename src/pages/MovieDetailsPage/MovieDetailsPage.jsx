@@ -393,8 +393,8 @@ const MovieDetailsPage = () => {
                   {/* Вбудував відеоплеєр */}
       <div className={styles.videoPlayerWrapper}>
         <h3 className={styles.movieDetailsTitleFilm}>Watch Trailer</h3>
-        <VideoPlayer filmId={film.id} />
-        {/* <VideoPlayer /> */}
+        {/* <VideoPlayer filmId={film.id} /> */}
+        <VideoPlayer />
       </div>
                   {/* Вбудував відеоплеєр */}
         <nav className={styles.moreInfo}>
